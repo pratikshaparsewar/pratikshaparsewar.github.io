@@ -1,27 +1,76 @@
-.header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.gradient-col {
+    background: linear-gradient(160deg,#02ccba,#aa7ecd);
 }
 
 .landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(160deg,#02ccba,#aa7ecd);
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
-.projects-grid {
+.avtar {
+	margin: 30px;
+	border-radius: 50%;
+	border: 8px solid #fff;
+}
+.mdl-mini-footer__left-section {
+      margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    display: block;
+}
+.bannertext {
+	
+	background: #fff;
+	border-radius: 20px;
+	width: 75%;
+	padding: 10px;
+	text-align: center;
+	margin:auto;
+}
+
+.bannertext h1 {
+	font-size: 60px;
+	line-height: 1.5em;
+	font-weight: bold;
+	 color: #02b3e4;;
+   margin-top: 0px;
+
+}
+
+.bannertext hr {
+	border-top:5px dotted black;
+	width: 50%;
+	margin:0 auto;
+
+}
+
+.bannertext p {
+	font-size: 24px;
+	line-height: 1.2em;
+	padding: 1em;
+	color: black;
+}
+
+.social-links {
   display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
 }
 
-/* contact page css */
-
+.social-links i {
+  color: black;
+  font-size: 5em;
+  padding: 8px;
+}
+.resume-page {
+	text-align: center;
+	background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
 .contact-body {
   margin: auto;
   position: fixed;
@@ -34,7 +83,7 @@
 .contact-grid {
   text-align: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: 550px;
   background: white;
   color: black;
@@ -60,50 +109,103 @@
   font-size: 66px;
   padding-right: 5rem;
 }
-
-
-/* contact page css */
-
-.avatar-img {
-  height: 250px;
-  padding-top: 5em;
+.fa-linkedin-square {
+  color:#0073b1 !important;
+}
+.fa-github-square {
+  color:#24292e  !important;
+}
+.fa-twitter {
+  color:#1da1f2 !important;
+}
+.fa-pinterest {
+ color:#bd081c !important;
 }
 
-.banner-text {
-  background-color: black;
-  opacity: .8;
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
+
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
 }
 
-.banner-text h1 {
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
 
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
 
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
-.social-links i {
-  color: white;
-  font-size: 5em;
-  padding: 8px;
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #02b3e4;
+  --hover: #02b3e4;
+      border-radius: 5px;
+    }
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+
+
+code {
+  color: #e4cb58;
+  font: inherit;
 }
