@@ -8,7 +8,7 @@ class Landing extends Component {
      <div style={{width:'100%',margin:'auto'}}>
      <Grid className="landing-grid">
      	<Cell col={12}>
-           <img src="https://media.licdn.com/dms/image/C5603AQEWOyrvYu82YQ/profile-displayphoto-shrink_200_200/0?e=1525374000&v=alpha&t=bTUo1Nu8BDAXMH5ombPbvH0PMP2OX603dNoBC2DnO0Q" 
+           <img src="https://scontent.fbom3-2.fna.fbcdn.net/v/t1.0-1/p160x160/21077286_698941270295639_980205353201706261_n.jpg?_nc_cat=0&oh=57d8120197ce3d115c7d065ad09df18e&oe=5BB51ED7" 
            		alt="pratiksha parsewar picture"
            		className="avtar"
            />
