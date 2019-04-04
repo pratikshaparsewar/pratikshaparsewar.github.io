@@ -8,12 +8,12 @@ class Landing extends Component {
      <div style={{width:'100%',margin:'auto'}}>
      <Grid className="landing-grid">
      	<Cell col={12}>
-           <img src="https://imgur.com/0t7wQtU" 
+           <img src="images/pratiksha.png"
            		alt="pratiksha parsewar picture"
            		className="avtar"
            />
            <div className="bannertext">
-             <h1>Front end web developer</h1>
+             <h1>Frontend developer</h1>
              <div className="buttons">
                 <button className="fill">HTML5</button>
                 <button className="fill">CSS3</button>
@@ -23,7 +23,7 @@ class Landing extends Component {
                 <button className="fill">Jquery</button>
                 <button className="fill">React</button>
                 <button className="fill">React-Native</button>
-              </div>  
+              </div>
 
              <div className="social-links">
     		          <a href="https://www.linkedin.com/in/pratikshaparsewar/" target="_blank">
@@ -49,10 +49,10 @@ class Landing extends Component {
         <FooterSection type="left">
             <FooterLinkList>
                 <a className="text-center" style={{color:'#fff'}}>Made with  <i className="fa fa-heart" aria-hidden="true" style={{color:'red',margin:'auto'}} /> in bangalore</a>
-            </FooterLinkList> 
+            </FooterLinkList>
         </FooterSection>
     </Footer>
-     
+
      </div>
     )
   }
